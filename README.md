@@ -5,6 +5,8 @@ Version 1.0.0
 ## What is this?
 `range_slider` is used for input fields that should contain a value within a range. Depending on browser support, the input field can be displayed as a slider control.
 
+![range_slider](https://cloud.githubusercontent.com/assets/1151181/7109917/ef4fb5b4-e15c-11e4-9d0f-f0523629aa5b.gif)
+
 ## Changelog
 1.0.0 - Initial release
 
