@@ -5,10 +5,11 @@
  *
  * @author     Rudy Affandi <rudy@adnetinc.com>
  * @copyright  2015
- * @link       
+ * @link       https://github.com/lesaff/range_slider
  * @license    http://opensource.org/licenses/MIT
  *
  * Versions
+ * 1.0.1       Fixed issue with displaying saved value
  * 1.0.0       Initial release
  */
 
@@ -16,12 +17,17 @@ class Fieldtype_range_slider extends Fieldtype
 {
   public function render()
   {
+
     $html = '';
 
     $min = $this->field_config['min'];
     $max = $this->field_config['max'];
     $step = $this->field_config['step'];
-    $value = $this->field_config['default_value'];
+    $value = $this->field_data;
+    if ($value != $this->field_data)
+    {
+      $value = $this->field_config['default_value'];
+    }
 
     // Allow setting custom values and labels
     $current_selection = ($this->field_data === $value);
