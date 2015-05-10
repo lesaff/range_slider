@@ -1,0 +1,23 @@
+/* 
+ * Default styling for range slider
+ *
+ */
+
+/* Namespace it */
+.range_slider-block {} 
+.range_slider-block input[type=range]{-webkit-appearance:none;border:1px solid white;width:300px}
+.range_slider-block input[type=range]::-webkit-slider-runnable-track{width:300px;height:5px;background:#ddd;border:none;border-radius:3px}
+.range_slider-block input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;border:none;height:16px;width:16px;border-radius:50%;background:#369;margin-top:-4px}
+.range_slider-block input[type=range]:focus{outline:none}
+.range_slider-block input[type=range]:focus::-webkit-slider-runnable-track{background:#ccc}
+
+.range_slider-block input[type=range]::-moz-range-track{width:300px;height:5px;background:#ddd;border:none;border-radius:3px}
+.range_slider-block input[type=range]::-moz-range-thumb{border:none;height:16px;width:16px;border-radius:50%;background:#369}
+.range_slider-block input[type=range]:-moz-focusring{outline:1px solid white;outline-offset:-1px}
+
+.range_slider-block input[type=range]::-ms-track{width:300px;height:5px;background:transparent;border-color:transparent;border-width:6px 0;color:transparent}
+.range_slider-block input[type=range]::-ms-fill-lower{background:#777;border-radius:10px}
+.range_slider-block input[type=range]::-ms-fill-upper{background:#ddd;border-radius:10px}
+.range_slider-block input[type=range]::-ms-thumb{border:none;height:16px;width:16px;border-radius:50%;background:#369}
+.range_slider-block input[type=range]:focus::-ms-fill-lower{background:#888}
+.range_slider-block input[type=range]:focus::-ms-fill-upper{background:#ccc}

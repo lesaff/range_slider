@@ -5,10 +5,11 @@
  *
  * @author     Rudy Affandi <rudy@adnetinc.com>
  * @copyright  2015
- * @link       
+ * @link       https://github.com/lesaff/range_slider
  * @license    http://opensource.org/licenses/MIT
  *
  * Versions
+ * 1.0.1       Fixed min and increments, added styling
  * 1.0.0       Initial release
  */
 
@@ -46,10 +47,10 @@ class Fieldtype_range_slider extends Fieldtype
 
     $html .= "<label class='range_slider-label' for='{$this->field_id}-range_slider'></label>";
     $html .= "<datalist id='{$this->fieldname}'>";
-    $i = 1;
+    $i = $min;
     while($i <= $this->field_config['max']) {
       $html .= "<option>{$i}</option>";
-      $i++;
+      $i += $step;
     }      
     $html .= "</datalist>";
     $html .= "<script>function {$this->field_id}(width){document.querySelector('#{$this->field_id}-width').innerHTML = width};</script>";
