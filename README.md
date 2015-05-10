@@ -1,12 +1,11 @@
 # HTML5 Range Slider fieldtype Add-on for Statamic
 By Rudy Affandi (2015)
-Version 1.0.1
+Version 1.0.0
 
 ## What is this?
 `range_slider` is used for input fields that should contain a value within a range. Depending on browser support, the input field can be displayed as a slider control.
 
 ## Changelog
-1.0.1 - Fixed min and increments, added styling
 1.0.0 - Initial release
 
 ## Installation
